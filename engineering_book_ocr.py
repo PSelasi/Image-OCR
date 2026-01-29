@@ -11,7 +11,7 @@ from pathlib import Path
 import json
 from datetime import datetime
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Users\USER\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'C:file path\Tesseract-OCR\tesseract.exe'
 
 class EngineeringBookOCR:
     def __init__(self, output_dir="output"):
@@ -271,4 +271,5 @@ if __name__ == "__main__":
     ocr.save_results(results)
     # print("\n✓ Processing complete!")
     # print(f"\nFormatted text preview:")
+
     # print(results['formatted_text'][:500])  # First 500 characters
